@@ -237,9 +237,24 @@ export default function DevenirBenevole() {
                     placeholder="Parlez-nous de votre motivation à rejoindre GADEF Monde..."
                     required
                   />
+                </div>
+              </div>
+
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                type="submit"
+                className="w-full bg-lambda-accent text-white py-4 px-6 rounded-xl font-medium flex items-center justify-center space-x-2 hover:bg-lambda-accent/90 transition-colors"
+              >
+                <Send className="w-5 h-5" />
+                <span>Envoyer ma candidature</span>
+              </motion.button>
+            </form>
+          </div>
+        </div>
+      </AnimatedSection>
+
       <Footer />
     </div>
   );
-}
-  )
 }
