@@ -17,7 +17,6 @@ export default function DevenirBenevole() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Traitement du formulaire
     console.log('Données du formulaire:', formData);
   };
 
@@ -30,26 +29,24 @@ export default function DevenirBenevole() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
       <section className="relative pt-32 pb-16 bg-gradient-to-br from-lambda-bg via-white to-lambda-bg overflow-hidden">
-        {/* Background Images */}
         <div className="absolute inset-0 z-0">
           <div className="absolute top-20 right-10 w-48 h-48 opacity-10 floating-animation">
-            <img 
-              src="https://images.pexels.com/photos/6647112/pexels-photo-6647112.jpeg?auto=compress&cs=tinysrgb&w=400" 
-              alt="Bénévoles en action" 
+            <img
+              src="https://images.pexels.com/photos/6647112/pexels-photo-6647112.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt="Bénévoles en action"
               className="w-full h-full object-cover rounded-full"
             />
           </div>
           <div className="absolute bottom-20 left-10 w-32 h-32 opacity-10 floating-animation" style={{ animationDelay: '2s' }}>
-            <img 
-              src="https://images.pexels.com/photos/6647020/pexels-photo-6647020.jpeg?auto=compress&cs=tinysrgb&w=300" 
-              alt="Engagement communautaire" 
+            <img
+              src="https://images.pexels.com/photos/6647020/pexels-photo-6647020.jpeg?auto=compress&cs=tinysrgb&w=300"
+              alt="Engagement communautaire"
               className="w-full h-full object-cover rounded-full"
             />
           </div>
         </div>
-        
+
         <div className="max-w-lambda mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 60 }}
@@ -57,7 +54,7 @@ export default function DevenirBenevole() {
             transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
             className="flex items-center justify-center mb-8"
           >
-            <motion.div 
+            <motion.div
               whileHover={{ rotate: 360, scale: 1.1 }}
               transition={{ duration: 0.8 }}
               className="w-20 h-20 bg-lambda-accent/10 rounded-2xl flex items-center justify-center"
@@ -84,7 +81,6 @@ export default function DevenirBenevole() {
         </div>
       </section>
 
-      {/* Pourquoi devenir bénévole */}
       <AnimatedSection className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-inter-tight font-semibold text-lambda-text text-center mb-12">
@@ -135,7 +131,6 @@ export default function DevenirBenevole() {
         </div>
       </AnimatedSection>
 
-      {/* Formulaire */}
       <AnimatedSection className="py-lambda bg-lambda-bg">
         <div className="max-w-2xl mx-auto px-6">
           <div className="lambda-card p-8 md:p-12">
@@ -241,10 +236,10 @@ export default function DevenirBenevole() {
               </div>
 
               <motion.button
+                type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                type="submit"
-                className="w-full bg-lambda-accent text-white py-4 px-6 rounded-xl font-medium flex items-center justify-center space-x-2 hover:bg-lambda-accent/90 transition-colors"
+                className="w-full bg-lambda-accent text-white py-3 px-6 rounded-xl font-medium hover:bg-lambda-accent/90 transition-colors flex items-center justify-center space-x-2"
               >
                 <Send className="w-5 h-5" />
                 <span>Envoyer ma candidature</span>
