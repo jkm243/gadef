@@ -122,7 +122,7 @@ export default function Home() {
               className="relative overflow-hidden rounded-lambda group"
             >
               <img 
-                src="https://images.pexels.com/photos/6646971/pexels-photo-6646971.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                src="https://images.pexels.com/photos/8061688/pexels-photo-8061688.jpeg?auto=compress&cs=tinysrgb&w=600" 
                 alt="Nutrition infantile en Guinée" 
                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
               />
