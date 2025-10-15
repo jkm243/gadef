@@ -51,7 +51,7 @@ const Navigation = () => {
               <span className="text-white font-bold text-lg">G</span>
             </div>
             <span className="font-inter-tight font-semibold text-xl text-lambda-text">
-              GADEF Monde
+              GADEF
             </span>
           </Link>
 

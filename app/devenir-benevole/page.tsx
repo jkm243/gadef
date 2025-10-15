@@ -76,7 +76,7 @@ export default function DevenirBenevole() {
             transition={{ duration: 0.6, delay: 0.4, type: "spring", stiffness: 140 }}
             className="text-lg text-lambda-muted max-w-2xl mx-auto"
           >
-            Rejoignez notre équipe de bénévoles passionnés et contribuez concrètement au développement des communautés guinéennes.
+            Rejoignez notre équipe de bénévoles passionnés et contribuez concrètement à soutenir les personnes vulnérables de Montréal-Nord.
           </motion.p>
         </div>
       </section>
@@ -91,7 +91,7 @@ export default function DevenirBenevole() {
               <div className="flex items-start space-x-4">
                 <div className="w-3 h-3 bg-lambda-accent rounded-full mt-2"></div>
                 <p className="text-lambda-text">
-                  <strong>Impact direct :</strong> Contribuez concrètement à l'amélioration des conditions de vie des communautés guinéennes.
+                  <strong>Impact direct :</strong> Contribuez concrètement à l'amélioration des conditions de vie des personnes vulnérables de notre communauté.
                 </p>
               </div>
               <div className="flex items-start space-x-4">
@@ -207,10 +207,10 @@ export default function DevenirBenevole() {
                   className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-lambda-accent focus:border-transparent transition-all"
                   required
                 >
-                  <option value="sante">Santé</option>
-                  <option value="education">Education</option>
-                  <option value="nutrition">Nutrition</option>
-                  <option value="autonomisation">Autonomisation</option>
+                  <option value="aide-sociale">Aide Sociale Directe</option>
+                  <option value="education">Education et Sensibilisation</option>
+                  <option value="securite-alimentaire">Sécurité Alimentaire</option>
+                  <option value="integration">Intégration et Inclusion</option>
                   <option value="administration">Administration</option>
                   <option value="communication">Communication</option>
                 </select>

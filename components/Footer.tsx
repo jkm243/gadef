@@ -22,11 +22,11 @@ const Footer = () => {
                 <span className="text-white font-bold text-lg">G</span>
               </div>
               <span className="font-inter-tight font-semibold text-xl">
-                GADEF Monde
+                GADEF
               </span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Guinée Assistance pour le Développement et l'Education des Femmes œuvre pour un développement communautaire durable en Guinée.
+              Groupe d'action pour le développement et la fraternité. Organisme sans but lucratif qui travaille pour répondre aux besoins essentiels des personnes vulnérables à Montréal.
             </p>
           </div>
 
@@ -58,19 +58,19 @@ const Footer = () => {
             <address className="space-y-4 not-italic">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-lambda-accent" />
-                <a href="mailto:contact@gadefmonde.com" className="text-gray-300 hover:text-lambda-accent transition-colors">
-                  contact@gadefmonde.com
+                <a href="mailto:info@gadefmonde.com" className="text-gray-300 hover:text-lambda-accent transition-colors">
+                  info@gadefmonde.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-lambda-accent" />
-                <a href="tel:+224123456789" className="text-gray-300 hover:text-lambda-accent transition-colors">
-                  +224 123 456 789
+                <a href="tel:+14386222010" className="text-gray-300 hover:text-lambda-accent transition-colors">
+                  +1 (438) 622-2010
                 </a>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-lambda-accent mt-1" />
-                <span className="text-gray-300">Conakry, Guinée</span>
+                <span className="text-gray-300">560 Av. Sainte-Croix<br/>Saint-Laurent, QC H4L 3X5</span>
               </div>
             </address>
           </div>
@@ -90,7 +90,7 @@ const Footer = () => {
           <div className="flex items-center space-x-2 mt-4 md:mt-0">
             <span className="text-gray-400 text-sm">Fait avec</span>
             <Heart className="w-4 h-4 text-lambda-secondary" />
-            <span className="text-gray-400 text-sm">pour la Guinée</span>
+            <span className="text-gray-400 text-sm">par <a href="jkmconception.com">Jkmconception</a></span>
           </div>
         </motion.div>
       </div>

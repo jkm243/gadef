@@ -37,10 +37,10 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2, type: "spring", stiffness: 100 }}
             className="text-4xl md:text-6xl lg:text-7xl font-inter-tight font-semibold leading-tight mb-8"
           >
-            <span className="gradient-text">GADEF Monde</span>
+            <span className="gradient-text">GADEF</span>
             <br />
             <span className="text-lambda-text">
-              Guinée Assistance pour le Développement et l'Education des Femmes
+              Groupe d'action pour le développement et la fraternité
             </span>
           </motion.h1>
           
@@ -50,7 +50,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.4, type: "spring", stiffness: 120 }}
             className="text-lg md:text-xl text-lambda-muted max-w-3xl mx-auto leading-relaxed mb-12"
           >
-            Nous œuvrons pour le développement communautaire en Guinée à travers des actions concrètes dans la santé, l'éducation, la nutrition et l'autonomisation des femmes.
+            Organisme sans but lucratif basé à Montréal-Nord, nous travaillons quotidiennement pour répondre aux besoins essentiels des personnes vulnérables avec solidarité, fraternité et respect.
           </motion.p>
 
           <motion.div
@@ -136,7 +136,30 @@ export default function Home() {
 
       {/* Nos Actions Section */}
       <AnimatedSection className="py-lambda bg-lambda-bg">
-        <div className="max-w-lambda mx-auto px-6">
+        <div className="max-w-lambda mx-auto px-8">
+          <div className="text-center mb-16">
+            <motion.h2
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
+              viewport={{ once: true }}
+              className="text-3xl md:text-4xl lg:text-5xl font-inter-tight font-semibold text-lambda-text mb-6"
+            >
+              À propos de nous
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="text-lg text-lambda-muted max-w-2xl mx-auto"
+            >
+             <strong> Le Groupe d’Action pour le Développement et la Fraternité (GADEF)</strong> est un organisme communautaire fondé en <strong>2022</strong> à Saint-Laurent (Montréal).
+Nous œuvrons pour le bien-être des familles, la sécurité alimentaire et le développement durable à travers des projets solidaires et inclusifs.
+Notre objectif est de <strong>lutter contre l’insécurité alimentaire, favoriser l’intégration sociale et encourager l’autonomie des communautés</strong> grâce à des initiatives concrètes comme nos <strong>serres agricoles, nos programmes de soutien et nos activités communautaires.</strong>
+
+            </motion.p>
+          </div>
           <div className="text-center mb-16">
             <motion.h2
               initial={{ opacity: 0, y: 40 }}
@@ -161,26 +184,26 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ActionCard
               icon={Heart}
-              title="Santé"
-              description="Amélioration de l'accès aux soins de santé et sensibilisation aux bonnes pratiques sanitaires dans les communautés rurales de Guinée."
+              title="Aide Sociale Directe"
+              description="Distribution alimentaire et vestimentaire aux familles défavorisées, soutien aux familles et accompagnement des personnes en situation précaire."
               delay={0.1}
             />
             <ActionCard
               icon={GraduationCap}
-              title="Education"
-              description="Promotion de l'éducation des femmes et des filles, construction d'écoles et programmes d'alphabétisation pour réduire les inégalités."
+              title="Éducation et Sensibilisation"
+              description="Ateliers éducatifs, formations, alphabétisation et développement personnel pour favoriser l'inclusion sociale."
               delay={0.2}
             />
             <ActionCard
               icon={Apple}
-              title="Nutrition"
-              description="Lutte contre la malnutrition par des programmes alimentaires et l'éducation nutritionnelle des mères et enfants."
+              title="Sécurité Alimentaire"
+              description="Agriculture urbaine, distribution alimentaire et lutte contre la faim dans nos communautés."
               delay={0.3}
             />
             <ActionCard
               icon={Users}
-              title="Autonomisation"
-              description="Renforcement de l'autonomisation économique des femmes à travers la formation professionnelle et l'accompagnement entrepreneurial."
+              title="Intégration et Inclusion"
+              description="Soutien aux nouveaux arrivants et lutte contre l'exclusion sociale pour bâtir une communauté solidaire."
               delay={0.4}
             />
           </div>
@@ -232,7 +255,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="text-lg text-lambda-muted mb-8 max-w-2xl mx-auto"
               >
-                Rejoignez notre équipe de bénévoles passionnés et contribuez concrètement au développement des communautés guinéennes. Votre engagement fait la différence.
+                Rejoignez notre équipe de bénévoles passionnés et contribuez concrètement à soutenir les personnes vulnérables de Montréal-Nord. Votre engagement fait la différence.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -291,7 +314,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="text-lg mb-8 max-w-2xl mx-auto opacity-90"
               >
-                Votre générosité permet de financer nos actions sur le terrain. Chaque don, petit ou grand, contribue à améliorer les conditions de vie des communautés guinéennes.
+                Votre générosité permet de financer nos actions sur le terrain. Chaque don, petit ou grand, contribue à améliorer les conditions de vie des familles défavorisées.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}

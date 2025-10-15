@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Heart, Users, GraduationCap, Apple } from 'lucide-react';
+import { Heart, Users, GraduationCap, Apple, Package, Home } from 'lucide-react';
 import AnimatedSection from '@/components/AnimatedSection';
 import Footer from '@/components/Footer';
 
@@ -9,53 +9,67 @@ export default function NosActions() {
   const actions = [
     {
       icon: Heart,
-      title: "Santé",
-      description: "Amélioration de l'accès aux soins de santé et sensibilisation aux bonnes pratiques sanitaires dans les communautés rurales de Guinée.",
+      title: "Aide Sociale Directe",
+      description: "Soutien direct aux familles et personnes en situation de vulnérabilité avec distribution de ressources essentielles.",
       details: [
-        "Construction et équipement de centres de santé communautaires",
-        "Formation d'agents de santé communautaires",
-        "Campagnes de vaccination et de prévention",
-        "Sensibilisation à l'hygiène et aux maladies transmissibles",
-        "Accompagnement des femmes enceintes et allaitantes"
+        "Distribution de denrées alimentaires aux familles défavorisées",
+        "Distribution de vêtements et articles de première nécessité",
+        "Accompagnement individuel des personnes en situation précaire",
+        "Soutien aux familles dans leurs démarches administratives",
+        "Aide d'urgence pour répondre aux besoins immédiats"
       ],
       color: "lambda-accent"
     },
     {
       icon: GraduationCap,
-      title: "Education",
-      description: "Promotion de l'éducation des femmes et des filles, construction d'écoles et programmes d'alphabétisation pour réduire les inégalités.",
+      title: "Éducation et Sensibilisation",
+      description: "Programmes éducatifs et formations pour favoriser le développement personnel et l'inclusion sociale.",
       details: [
-        "Construction et réhabilitation d'écoles primaires",
+        "Ateliers éducatifs sur divers sujets communautaires",
         "Programmes d'alphabétisation pour adultes",
-        "Bourses scolaires pour les filles",
-        "Formation des enseignants",
-        "Sensibilisation à l'importance de l'éducation féminine"
+        "Formations professionnelles adaptées aux besoins",
+        "Développement personnel et renforcement des compétences",
+        "Sensibilisation aux droits et ressources disponibles"
       ],
       color: "lambda-secondary"
     },
     {
       icon: Apple,
-      title: "Nutrition",
-      description: "Lutte contre la malnutrition par des programmes alimentaires et l'éducation nutritionnelle des mères et enfants.",
+      title: "Sécurité Alimentaire",
+      description: "Initiatives pour garantir l'accès à une alimentation saine et combattre la faim dans nos communautés.",
       details: [
-        "Distribution de compléments nutritionnels",
-        "Jardins communautaires et potagers familiaux",
-        "Education nutritionnelle pour les mères",
-        "Suivi de la croissance des enfants",
-        "Promotion de l'allaitement maternel"
+        "Agriculture urbaine et jardins communautaires (acquisition de serres)",
+        "Distribution alimentaire régulière via Moisson Montréal",
+        "Lutte contre la faim et l'insécurité alimentaire",
+        "Éducation nutritionnelle et ateliers culinaires",
+        "Promotion de l'autonomie alimentaire locale"
       ],
       color: "green-500"
     },
     {
       icon: Users,
-      title: "Autonomisation",
-      description: "Renforcement de l'autonomisation économique des femmes à travers la formation professionnelle et l'accompagnement entrepreneurial.",
+      title: "Intégration et Inclusion",
+      description: "Accompagnement des nouveaux arrivants et promotion de l'inclusion sociale pour bâtir une communauté solidaire.",
       details: [
-        "Formations professionnelles adaptées",
-        "Microcrédit et accompagnement entrepreneurial",
-        "Groupements d'épargne et de crédit",
-        "Sensibilisation aux droits des femmes",
-        "Leadership féminin et participation communautaire"
+        "Soutien aux nouveaux arrivants dans leur intégration",
+        "Facilitation de l'accès aux services et ressources locales",
+        "Activités culturelles et communautaires pour favoriser les liens",
+        "Lutte contre l'exclusion sociale et l'isolement",
+        "Promotion de la diversité et du vivre-ensemble"
+      ],
+      color: "purple-500"
+    },
+    {
+      icon: Apple,
+      title: "Nos objectifs",
+      description: "",
+      details: [
+        "Renforcer la sécurité alimentaire des familles à faible revenu grâce à la production locale et à la distribution solidaire.",
+        "Renforcer la sécurité alimentaire des familles à faible revenu grâce à la production locale et à la distribution solidaire.",
+        "Soutenir le développement durable par des pratiques agricoles écologiques et responsables.",
+        "Créer des espaces de fraternité et de partage, où les citoyens peuvent s’impliquer et s’entraider.",
+        "Former et sensibiliser la population aux enjeux environnementaux, alimentaires et sociaux.",
+        "Développer des partenariats communautaires pour bâtir un réseau solide au service de la collectivité."
       ],
       color: "purple-500"
     }
@@ -63,26 +77,24 @@ export default function NosActions() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
       <section className="relative pt-32 pb-16 bg-gradient-to-br from-lambda-bg via-white to-lambda-bg overflow-hidden">
-        {/* Background Images */}
         <div className="absolute inset-0 z-0">
           <div className="absolute top-10 right-20 w-32 h-32 opacity-5 floating-animation">
-            <img 
-              src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=300" 
-              alt="Actions GADEF" 
+            <img
+              src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=300"
+              alt="Actions GADEF"
               className="w-full h-full object-cover rounded-full"
             />
           </div>
           <div className="absolute bottom-10 left-20 w-40 h-40 opacity-5 floating-animation" style={{ animationDelay: '3s' }}>
-            <img 
-              src="https://images.pexels.com/photos/6647019/pexels-photo-6647019.jpeg?auto=compress&cs=tinysrgb&w=300" 
-              alt="Développement communautaire" 
+            <img
+              src="https://images.pexels.com/photos/6647019/pexels-photo-6647019.jpeg?auto=compress&cs=tinysrgb&w=300"
+              alt="Développement communautaire"
               className="w-full h-full object-cover rounded-full"
             />
           </div>
         </div>
-        
+
         <div className="max-w-lambda mx-auto px-6 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 60 }}
@@ -98,33 +110,31 @@ export default function NosActions() {
             transition={{ duration: 0.6, delay: 0.2, type: "spring", stiffness: 120 }}
             className="text-lg text-lambda-muted max-w-2xl mx-auto"
           >
-            Découvrez en détail nos quatre domaines d'intervention pour un développement durable des communautés guinéennes.
+            Découvrez nos quatre domaines d'intervention pour promouvoir la solidarité, l'inclusion sociale et le développement humain durable à Montréal-Nord.
           </motion.p>
         </div>
       </section>
 
-      {/* Actions détaillées */}
       <section className="py-lambda bg-white">
         <div className="max-w-lambda mx-auto px-6">
           <div className="space-y-16">
             {actions.map((action, index) => (
               <AnimatedSection key={action.title} delay={index * 0.1}>
-                <motion.div 
+                <motion.div
                   whileHover={{ scale: 1.01, y: -5 }}
                   className={`lambda-card p-8 md:p-12 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''} md:flex items-center gap-12 relative overflow-hidden`}
                 >
-                  {/* Background Image */}
                   <div className="absolute inset-0 opacity-5">
-                    <img 
+                    <img
                       src={`https://images.pexels.com/photos/${index % 2 === 0 ? '6646918' : '6647019'}/pexels-photo-${index % 2 === 0 ? '6646918' : '6647019'}.jpeg?auto=compress&cs=tinysrgb&w=800`}
                       alt={`${action.title} background`}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  
+
                   <div className="flex-1">
                     <div className="flex items-center mb-6">
-                      <motion.div 
+                      <motion.div
                         whileHover={{ rotate: 360, scale: 1.1 }}
                         transition={{ duration: 0.6 }}
                         className={`w-16 h-16 bg-${action.color}/10 rounded-2xl flex items-center justify-center mr-4`}
@@ -140,7 +150,7 @@ export default function NosActions() {
                     </p>
                     <div className="space-y-4">
                       {action.details.map((detail, idx) => (
-                        <motion.div 
+                        <motion.div
                           key={idx}
                           initial={{ opacity: 0, x: -20 }}
                           whileInView={{ opacity: 1, x: 0 }}
