@@ -40,7 +40,7 @@ export default function Home() {
             <span className="gradient-text">GADEF</span>
             <br />
             <span className="text-lambda-text">
-              Groupe d'action pour le développement et la fraternité
+              Groupe d'Action pour le Développement et la Fraternité
             </span>
           </motion.h1>
           
@@ -50,7 +50,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.4, type: "spring", stiffness: 120 }}
             className="text-lg md:text-xl text-lambda-muted max-w-3xl mx-auto leading-relaxed mb-12"
           >
-            Organisme sans but lucratif basé à Montréal-Nord, nous travaillons quotidiennement pour répondre aux besoins essentiels des personnes vulnérables avec solidarité, fraternité et respect.
+            Organisme communautaire fondé en 2022 à Saint-Laurent (Montréal), nous œuvrons pour le bien-être des familles, la sécurité alimentaire et le développement durable à travers des projets solidaires et inclusifs.
           </motion.p>
 
           <motion.div
@@ -154,9 +154,9 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-lg text-lambda-muted max-w-2xl mx-auto"
             >
-             <strong> Le Groupe d’Action pour le Développement et la Fraternité (GADEF)</strong> est un organisme communautaire fondé en <strong>2022</strong> à Saint-Laurent (Montréal).
+             <strong>Le Groupe d'Action pour le Développement et la Fraternité (GADEF)</strong> est un organisme communautaire fondé en <strong>2022</strong> à Saint-Laurent (Montréal).
 Nous œuvrons pour le bien-être des familles, la sécurité alimentaire et le développement durable à travers des projets solidaires et inclusifs.
-Notre objectif est de <strong>lutter contre l’insécurité alimentaire, favoriser l’intégration sociale et encourager l’autonomie des communautés</strong> grâce à des initiatives concrètes comme nos <strong>serres agricoles, nos programmes de soutien et nos activités communautaires.</strong>
+Notre objectif est de <strong>lutter contre l'insécurité alimentaire, favoriser l'intégration sociale et encourager l'autonomie des communautés</strong> grâce à des initiatives concrètes comme nos <strong>serres agricoles, nos programmes de soutien et nos activités communautaires.</strong>
 
             </motion.p>
           </div>
@@ -177,33 +177,33 @@ Notre objectif est de <strong>lutter contre l’insécurité alimentaire, favori
               viewport={{ once: true }}
               className="text-lg text-lambda-muted max-w-2xl mx-auto"
             >
-              Découvrez nos quatre domaines d'intervention pour un impact durable sur les communautés guinéennes.
+              Découvrez nos domaines d'intervention pour promouvoir la solidarité, l'inclusion sociale et le développement durable à Montréal.
             </motion.p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ActionCard
               icon={Heart}
-              title="Aide Sociale Directe"
-              description="Distribution alimentaire et vestimentaire aux familles défavorisées, soutien aux familles et accompagnement des personnes en situation précaire."
+              title="Sécurité Alimentaire"
+              description="Mise en place de serres agricoles, distribution de paniers alimentaires et soutien aux familles en situation de précarité."
               delay={0.1}
             />
             <ActionCard
               icon={GraduationCap}
-              title="Éducation et Sensibilisation"
-              description="Ateliers éducatifs, formations, alphabétisation et développement personnel pour favoriser l'inclusion sociale."
+              title="Développement Communautaire"
+              description="Organisation d'activités sociales, de formations et de programmes d'intégration pour les nouveaux arrivants."
               delay={0.2}
             />
             <ActionCard
               icon={Apple}
-              title="Sécurité Alimentaire"
-              description="Agriculture urbaine, distribution alimentaire et lutte contre la faim dans nos communautés."
+              title="Éducation et Environnement"
+              description="Sensibilisation à l'agriculture durable et à la protection de l'environnement."
               delay={0.3}
             />
             <ActionCard
               icon={Users}
-              title="Intégration et Inclusion"
-              description="Soutien aux nouveaux arrivants et lutte contre l'exclusion sociale pour bâtir une communauté solidaire."
+              title="Nos Serres Agricoles"
+              description="Les serres du Saint-Laurent, exploitées par le GADEF, sont un espace de production, d'apprentissage et de partage."
               delay={0.4}
             />
           </div>
@@ -255,7 +255,7 @@ Notre objectif est de <strong>lutter contre l’insécurité alimentaire, favori
                 viewport={{ once: true }}
                 className="text-lg text-lambda-muted mb-8 max-w-2xl mx-auto"
               >
-                Rejoignez notre équipe de bénévoles passionnés et contribuez concrètement à soutenir les personnes vulnérables de Montréal-Nord. Votre engagement fait la différence.
+                Rejoignez notre équipe de bénévoles passionnés et contribuez concrètement à soutenir les familles et favoriser l'intégration sociale à Saint-Laurent. Votre engagement fait la différence.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -314,7 +314,7 @@ Notre objectif est de <strong>lutter contre l’insécurité alimentaire, favori
                 viewport={{ once: true }}
                 className="text-lg mb-8 max-w-2xl mx-auto opacity-90"
               >
-                Votre générosité permet de financer nos actions sur le terrain. Chaque don, petit ou grand, contribue à améliorer les conditions de vie des familles défavorisées.
+                Votre générosité permet de financer nos actions sur le terrain. Chaque don, petit ou grand, contribue à améliorer les conditions de vie des familles et à favoriser l'intégration sociale.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
