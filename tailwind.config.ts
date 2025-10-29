@@ -17,8 +17,8 @@ const config: Config = {
         'lambda': {
           bg: '#FAFAFA',
           text: '#0A0A0A',
-          accent: '#0066FF',
-          secondary: '#FF6B6B',
+          accent: '#ee7228',
+          secondary: '#2b85c5',
           muted: '#9CA3AF',
         },
         background: 'hsl(var(--background))',

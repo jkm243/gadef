@@ -47,12 +47,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2" aria-label="Retour à l'accueil GADEF Monde">
-            <div className="w-10 h-10 bg-lambda-accent rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">G</span>
-            </div>
-            <span className="font-inter-tight font-semibold text-xl text-lambda-text">
-              GADEF
-            </span>
+          <img src="https://i.ibb.co/DD259tPM/Logo-Gadef.png" alt="GADEF Logo" className="w-15 h-12 rounded-lg" />
           </Link>
 
           {/* Desktop Navigation */}

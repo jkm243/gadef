@@ -18,12 +18,7 @@ const Footer = () => {
           {/* Logo et Mission */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-lambda-accent rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">G</span>
-              </div>
-              <span className="font-inter-tight font-semibold text-xl">
-                GADEF
-              </span>
+             <img src="https://i.ibb.co/DD259tPM/Logo-Gadef.png" alt="GADEF Logo" className="w-25 h-25 rounded-lg" />
             </div>
             <p className="text-gray-300 leading-relaxed">
               Groupe d'action pour le développement et la fraternité. Organisme sans but lucratif qui travaille pour répondre aux besoins essentiels des personnes vulnérables à Montréal.
