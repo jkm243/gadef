@@ -1,4 +1,15 @@
+# Robots.txt pour GADEF
+# https://gadef.org/robots.txt
+
 User-agent: *
 Allow: /
 
-Sitemap: https://gadefmonde.com/sitemap.xml
+# Sitemap
+Sitemap: https://gadef.org/sitemap.xml
+
+# Règles spécifiques pour les moteurs de recherche
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
