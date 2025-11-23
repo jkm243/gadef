@@ -12,34 +12,26 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative pt-32 pb-lambda bg-gradient-to-br from-lambda-bg via-white to-lambda-bg overflow-hidden" aria-label="Section d'accueil">
-        {/* Background Images */}
+        {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute top-20 right-10 w-64 h-64 opacity-10 floating-animation">
-            <img 
-              src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=500" 
-              alt="Community development" 
-              className="w-full h-full object-cover rounded-full"
-            />
-          </div>
-          <div className="absolute bottom-20 left-10 w-48 h-48 opacity-10 floating-animation" style={{ animationDelay: '2s' }}>
-            <img 
-              src="https://images.pexels.com/photos/6647019/pexels-photo-6647019.jpeg?auto=compress&cs=tinysrgb&w=400" 
-              alt="Education in Guinea" 
-              className="w-full h-full object-cover rounded-full"
-            />
-          </div>
+          <img
+            src="https://i.ibb.co/DHHfxkjL/Whats-App-Image-2025-10-30-at-15-46-16.jpg"
+            alt="GADEF communauté"
+            className="w-full h-full object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/30 to-white/50"></div>
         </div>
-        
-        <div className="max-w-lambda mx-auto px-6 text-center">
+
+        <div className="max-w-lambda mx-auto px-6 text-center relative z-10">
           <motion.h1
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, type: "spring", stiffness: 100 }}
             className="text-4xl md:text-6xl lg:text-7xl font-inter-tight font-semibold leading-tight mb-8"
           >
-            <span className="gradient-text">GADEF</span>
+            <span className="text-gray-900 drop-shadow-lg">GADEF</span>
             <br />
-            <span className="text-lambda-text">
+            <span className="text-gray-800 drop-shadow-lg">
               Groupe d'action pour le développement et la fraternité
             </span>
           </motion.h1>
@@ -48,7 +40,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4, type: "spring", stiffness: 120 }}
-            className="text-lg md:text-xl text-lambda-muted max-w-3xl mx-auto leading-relaxed mb-12"
+            className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-12 drop-shadow"
           >
             Organisme sans but lucratif basé à Montréal-Nord, nous travaillons quotidiennement pour répondre aux besoins essentiels des personnes vulnérables avec solidarité, fraternité et respect.
           </motion.p>
@@ -87,13 +79,13 @@ export default function Home() {
               viewport={{ once: true }}
               className="relative overflow-hidden rounded-lambda group"
             >
-              <img 
-                src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="Santé communautaire en Guinée" 
+              <img
+                src="https://i.ibb.co/4n8n6r1W/Whats-App-Image-2025-10-30-at-15-42-24.jpg"
+                alt="Sécurité alimentaire à GADEF"
                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 image-overlay opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
-                <p className="text-white font-semibold text-lg">Santé Communautaire</p>
+                <p className="text-white font-semibold text-lg">Sécurité Alimentaire</p>
               </div>
             </motion.div>
             
@@ -104,13 +96,13 @@ export default function Home() {
               viewport={{ once: true }}
               className="relative overflow-hidden rounded-lambda group"
             >
-              <img 
-                src="https://images.pexels.com/photos/6647019/pexels-photo-6647019.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="Education des femmes en Guinée" 
+              <img
+                src="https://i.ibb.co/jPBN3B4Y/Whats-App-Image-2025-10-30-at-15-42-23.jpg"
+                alt="Développement communautaire"
                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 image-overlay opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
-                <p className="text-white font-semibold text-lg">Education des Femmes</p>
+                <p className="text-white font-semibold text-lg">Développement Communautaire</p>
               </div>
             </motion.div>
             
@@ -121,13 +113,13 @@ export default function Home() {
               viewport={{ once: true }}
               className="relative overflow-hidden rounded-lambda group"
             >
-              <img 
-                src="https://images.pexels.com/photos/8061688/pexels-photo-8061688.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="Nutrition infantile en Guinée" 
+              <img
+                src="https://i.ibb.co/yFwwdJ2x/Whats-App-Image-2025-10-30-at-15-42-23-1.jpg"
+                alt="Inclusion et solidarité" 
                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 image-overlay opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
-                <p className="text-white font-semibold text-lg">Nutrition Infantile</p>
+                <p className="text-white font-semibold text-lg">Inclusion Sociale</p>
               </div>
             </motion.div>
           </div>

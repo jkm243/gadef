@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Heart, Users, GraduationCap, Apple, Package, Home } from 'lucide-react';
+import Link from 'next/link';
 import AnimatedSection from '@/components/AnimatedSection';
 import Footer from '@/components/Footer';
 
@@ -18,7 +19,8 @@ export default function NosActions() {
         "Soutien aux familles dans leurs démarches administratives",
         "Aide d'urgence pour répondre aux besoins immédiats"
       ],
-      color: "lambda-accent"
+      color: "lambda-accent",
+      galleryLink: null
     },
     {
       icon: GraduationCap,
@@ -31,7 +33,8 @@ export default function NosActions() {
         "Développement personnel et renforcement des compétences",
         "Sensibilisation aux droits et ressources disponibles"
       ],
-      color: "lambda-secondary"
+      color: "lambda-secondary",
+      galleryLink: null
     },
     {
       icon: Apple,
@@ -44,7 +47,8 @@ export default function NosActions() {
         "Éducation nutritionnelle et ateliers culinaires",
         "Promotion de l'autonomie alimentaire locale"
       ],
-      color: "green-500"
+      color: "green-500",
+      galleryLink: null
     },
     {
       icon: Users,
@@ -57,7 +61,8 @@ export default function NosActions() {
         "Lutte contre l'exclusion sociale et l'isolement",
         "Promotion de la diversité et du vivre-ensemble"
       ],
-      color: "purple-500"
+      color: "purple-500",
+      galleryLink: "/galeries/integration-inclusion"
     },
     {
       icon: Apple,
@@ -67,11 +72,12 @@ export default function NosActions() {
         "Renforcer la sécurité alimentaire des familles à faible revenu grâce à la production locale et à la distribution solidaire.",
         "Renforcer la sécurité alimentaire des familles à faible revenu grâce à la production locale et à la distribution solidaire.",
         "Soutenir le développement durable par des pratiques agricoles écologiques et responsables.",
-        "Créer des espaces de fraternité et de partage, où les citoyens peuvent s’impliquer et s’entraider.",
+        "Créer des espaces de fraternité et de partage, où les citoyens peuvent s'impliquer et s'entraider.",
         "Former et sensibiliser la population aux enjeux environnementaux, alimentaires et sociaux.",
         "Développer des partenariats communautaires pour bâtir un réseau solide au service de la collectivité."
       ],
-      color: "purple-500"
+      color: "purple-500",
+      galleryLink: null
     }
   ];
 
@@ -120,9 +126,9 @@ export default function NosActions() {
           <div className="space-y-16">
             {actions.map((action, index) => (
               <AnimatedSection key={action.title} delay={index * 0.1}>
+                <div>
                 <motion.div
-                  whileHover={{ scale: 1.01, y: -5 }}
-                  className={`lambda-card p-8 md:p-12 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''} md:flex items-center gap-12 relative overflow-hidden`}
+                  className={`lambda-card p-8 md:p-12 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''} md:flex items-center gap-12 relative overflow-hidden hover:scale-[1.01] hover:-translate-y-1 transition-all duration-300`}
                 >
                   <div className="absolute inset-0 opacity-5">
                     <img
@@ -148,7 +154,7 @@ export default function NosActions() {
                     <p className="text-lg text-lambda-muted mb-8 leading-relaxed">
                       {action.description}
                     </p>
-                    <div className="space-y-4">
+                    <div className="space-y-4 mb-8">
                       {action.details.map((detail, idx) => (
                         <motion.div
                           key={idx}
@@ -165,6 +171,17 @@ export default function NosActions() {
                     </div>
                   </div>
                 </motion.div>
+                {action.galleryLink && (
+                  <div className="mt-6 px-8">
+                    <Link
+                      href={action.galleryLink}
+                      className="lambda-btn-primary inline-block hover:scale-105 active:scale-95 transition-transform duration-200 relative z-50 pointer-events-auto"
+                    >
+                      Voir la galerie photo
+                    </Link>
+                  </div>
+                )}
+                </div>
               </AnimatedSection>
             ))}
           </div>
